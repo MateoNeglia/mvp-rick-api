@@ -457,6 +457,3 @@ function offlineNotification() {
   );  
 }
 
-const removeOffNot = () => {  
-  
-}; 
