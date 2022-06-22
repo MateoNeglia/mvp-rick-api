@@ -1,0 +1,219 @@
+/*Color Palette: https://coolors.co/palette/0a1122-322066-191919-102e99-0c95c9  */
+
+:root {
+    --main-dark-blue: #0a1122 !important;
+    --main-dark-purple: #322066 !important;
+    --main-dark-grey: #191919 !important;
+    --main-klein-blue: #102e99 !important;
+    --main-light-blue: #0c95c9 !important;
+}
+
+/*-------------------Coor palette classes-------------------------*/
+
+/*Backgrounds*/
+.dark-blue-bg {
+    background-color: var(--main-dark-blue);
+}
+
+.dark-purple-bg {
+    background-color: var(--main-dark-purple);
+}
+
+.dark-grey-bg {
+    background-color: var(--main-dark-grey);
+}
+
+.klein-blue-bg {
+    background-color: var(--main-klein-blue);
+}
+
+.light-blue-bg {
+    background-color: var(--main-light-blue);
+}
+
+/*Colors*/
+.dark-blue-color {
+    color: var(--main-dark-blue);
+}
+
+.dark-purple-color {
+    color: var(--main-dark-purple);
+}
+
+.dark-grey-color {
+    color: var(--main-dark-grey);
+}
+
+.klein-blue-color {
+    color: var(--main-klein-blue);
+}
+
+.light-blue-color {
+    color: var(--main-light-blue);
+}
+
+/*Aditional Color states*/
+
+.light-green-color {
+    color: #a7c957;
+}
+
+.light-green-bg-color {
+    background-color: #a7c957;
+}
+
+.light-red-color {
+    color: #ef233c;
+}
+
+.light-red-bg-color {
+    background-color: #ef233c;
+}
+
+
+/*---------------------------------------------------------------------*/
+
+
+.notification-success {
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    display: none;
+    flex-direction: row;
+}
+
+.offline-notification {
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    display: none;    
+}
+
+header .nav-container nav a {
+    color: #f0f0f0 !important;
+}
+
+header .nav-container nav a:hover {
+    color: var(--main-dark-purple);
+}
+
+header .nav-container nav a {
+    text-transform: uppercase;
+    letter-spacing: .15em;
+}
+
+header .nav-container nav a:hover {
+    color: var(--main-light-blue);
+}
+
+#logo-container {
+    width: 250px;
+    height: 55px;
+    background: url(../imgs/main-page-logo.png) center center no-repeat;      
+    display: inline-block;
+          
+}
+
+#page-title {
+    display: none;
+}
+
+h2 {
+    text-align: center;
+    padding: 0.5em;    
+    color: #f0f0f0;
+}
+
+li {
+    list-style: none;
+}
+
+.input_text, .submit {
+    padding: 1em;
+    margin: .25em;
+}
+
+.navbar-toggler-icon  {
+    color: #f0f0f0;
+}
+
+.input_text {
+    width: 50%;    
+    background-color: #f0f0f0;
+    color: #2C7DA0;
+}
+
+.submit {
+    padding: 2em;
+    width: 60px;
+    height: 60px;
+    background-color: var(--main-dark-purple);      
+    font-size: 0;    
+    border:none;
+}
+
+.submit img {    
+    height: 20px;
+    width: 20px;
+    
+}
+
+.inner-list-item {
+    font-weight: 600;
+    color: #013A63;
+}
+
+.new-search-button {
+    background-color: #2A6F97;
+    color: #A9D6E5;
+    font-weight: 600;
+    width: 25%;
+}
+
+.character-cards {
+    width: 300px!important;
+    color: #f0f0f0;
+    height: 725px;
+}
+
+.episode-cards {
+    width: 300px!important;
+    color: #f0f0f0;    
+    height: 500px;
+}
+
+.character-cards ul li {
+    margin-bottom: .5em;
+}
+
+.add-char-button {
+    color: #f0f0f0;
+}
+
+
+@media screen and (max-width: 992px) {
+    .input_text {
+        width: 75%;
+    }
+    .new-search-button {
+        width: 75%;
+    }
+    .video-iframe-container {
+        display: none;
+    }
+
+    #logo-container {
+        position: absolute;
+        width: 72px;        
+        background: url("../imgs/page-logo.png") center center no-repeat;
+        left: calc(50% - 36px);
+        top: 0;
+    }
+
+    .nav-container {
+        padding: 1em!important;
+    }
+}
+

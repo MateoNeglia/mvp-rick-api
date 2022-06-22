@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="icon" href="imgs/favicon.ico" />
+    <title>Mateo D. Neglia - PWA</title>
+</head>
+
+<body class="dark-blue-bg">
+    <div class="page-container">
+        <header>
+            <div class="klein-blue-bg" id="main-header">
+                <div class="container-lg nav-container">                      
+                    <nav id="main-nav" class="navbar navbar-dark navbar-expand-lg ">
+                        <a href="index.html" id="home-link" class="navbar-brand"> 
+                            <div id="logo-container">
+                                <h1 id="page-title">Rick's Crazy Lab</h1>                                                 
+                            </div> 
+                        </a> 
+                        <button class="navbar-toggler" type="button" 
+                                data-bs-toggle="collapse" 
+                                data-bs-target="#barra-de-navegacion" 
+                                aria-controls="barra-de-navegacion" 
+                                aria-expanded="false" 
+                                aria-label="botón hamburguesa">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse m-auto" id="barra-de-navegacion">
+                            <ul class="navbar-nav text-center ms-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link custom-nav-link" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link custom-nav-link" href="pages/fav-characters.html">Favourite Characters</a>
+                                </li>                        
+                                <li class="nav-item">
+                                    <a class="nav-link custom-nav-link" href="pages/episodes.html">Episode Finder</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>  
+                </div>
+            </div>    
+        </header>
+        <main>
+            <div class="offline-notification light-red-bg-color p-3" id="offline-notification">You are in offline Mode</div>
+            <div class="notification-success light-green-bg-color p-2" id="notification-success">                
+                </div>
+            <div class="container" id=''>
+                <h2 class="main-title text-center m-3">Get a Schwifty Character:</h2>
+                <div class="search-bar text-center d-flex justify-content-center align-items-center" id='search-bar'>
+                    <input type="text" name="search-input" id="search-input" class="input-group input_text" placeholder="Yes Morty, you should type your search here. I don't have all day.">
+                    <button class="submit" id="search-button">Search
+                        <img src="imgs/search.svg" alt="search icon"/>
+                    </button>
+                </div>
+                <div class="d-flex flex-wrap justify-content-center mt-3" id="response-container"></div>
+            </div>    
+        </main>
+        <footer></footer>
+    </div>  
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="src/scroll-animation.js"></script>  
+    <script src="src/register-service-worker.js"></script>    
+    <script src="app.js"></script>      
+</body>
+
+</html>
